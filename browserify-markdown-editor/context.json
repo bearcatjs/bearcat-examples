@@ -1,0 +1,5 @@
+{
+	"name": "browserify-markdown-editor",
+	"scan": ["app"],
+	"beans": []
+}

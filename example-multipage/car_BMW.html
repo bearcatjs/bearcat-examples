@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BMV car run</title>
+		<script src="./lib/bearcat.js"></script>
+		<script src="./bearcat-bootstrap.js"></script>
+		<script type="text/javascript">
+		bearcat.createApp();
+		bearcat.use(['bmwCarController']);
+		bearcat.start(function() {
+			var bmwCarController = bearcat.getBean('bmwCarController');
+			bmwCarController.run();
+		});
+		</script>
+	</head>
+	<body>
+		<div><a href="car_benz.html">Go to benz car run</a></div>
+		<img src="./images/bmw.jpg" style="height:130px; width:130px;">
+		<img src="./images/car.png">
+		<div id="main"></div>
+	</body>
+</html>

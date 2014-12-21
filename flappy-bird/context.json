@@ -1,0 +1,5 @@
+{
+	"name": "flappy-bird",
+	"scan": ["app"],
+	"beans": []
+}

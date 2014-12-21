@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Clumsy Bird</title>
+    <link rel="apple-touch-icon-precomposed" href="data/img/touch-icon-iphone.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="data/img/touch-icon-iphone-retina.png"/>
+    <link rel="shortcut icon" href="data/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="data/css/index.css">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Clumsy Bird">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Clumsy Bird - A Flappy Bird clone using MelonJS"/>
+    <meta name="keywords" content="flappybird, flappy, bird, game, html5, melonjs,clone"/>
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="RDZI9SqVaffd48uHfZMv67-YdvviOMe2HuULEYqVgd4" />
+    <meta property="og:image" content="http://ellisonleao.github.io/clumsy-bird/data/img/bg.png" />
+    <meta property="og:title" content="Clumsy Bird - A Flappy Bird clone using MelonJS"/>
+    <meta property="og:url" content="http://ellisonleao.github.io/clumsy-bird/"/>
+    <meta property="og:site_name" content="Clumsy Bird - MelonJS"/>
+    
+    <!-- Twitter Card -->
+	  <meta name="twitter:hashtag" content="clumsybird" />
+	  <meta name="twitter:card" content="summary" />
+	  <meta name="twitter:site" content="@ellisonleao" />
+	  <meta name="twitter:creator" content="@ellisonleao" />
+	  <meta name="twitter:title" content="Clumsy Bird" />
+	  <meta name="twitter:description" content="A Flappy Bird melonJS clone " />
+
+
+    <!-- Humans -->
+    <link rel="author" href="humans.txt" />
+
+    <link rel="stylesheet" type="text/css" href="data/css/addtohomescreen.css">
+    <script src="lib/addtohomescreen.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Canvas placeholder -->
+    <div id="screen"></div>
+    <!-- Sharing section -->
+
+    <!-- melonJS Library -->
+    <script type="text/javascript" src="lib/melonJS-1.0.2.js" ></script>
+    <!--script type="text/javascript" src="build/clumsy.js" ></script-->
+    <script type="text/javascript" src="lib/bearcat.js" ></script>
+    <script type="text/javascript" src="bearcat-bootstrap.js" ></script>
+    <!-- Bootstrap & Mobile optimization tricks -->
+    <script type="text/javascript">
+      window.onReady(function onReady() {
+        bearcat.createApp();
+        bearcat.use(['game']);
+        bearcat.start(function() {
+          var game = bearcat.getBean('game');
+          window.game = game;
+          game.onload();
+        });
+        // game.onload();
+        // Mobile browser hacks
+        if (me.device.isMobile && !navigator.isCocoonJS) {
+          // Prevent the webview from moving on a swipe
+          window.document.addEventListener("touchmove", function (e) {
+            e.preventDefault();
+            window.scroll(0, 0);
+            return false;
+          }, false);
+
+          // Scroll away mobile GUI
+          (function () {
+            window.scrollTo(0, 1);
+            me.video.onresize(null);
+          }).defer();
+
+          me.event.subscribe(me.event.WINDOW_ONRESIZE, function (e) {
+            window.scrollTo(0, 1);
+          });
+        }
+      });
+    </script>
+
+  </body>
+</html>

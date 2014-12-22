@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>bearcat-vs-AMD</title>
+		<script src="./lib/bearcat.js"></script>
+		<script src="./bearcat-bootstrap.js"></script>
+		<script type="text/javascript">
+		bearcat.createApp();
+		bearcat.use(['car']);
+		bearcat.start(function() {
+			var car = bearcat.getBean('car');
+			car.run();
+		});
+		</script>
+	</head>
+	<body>
+		<div><a href="../AMD/index.html">Go to bearcat version</a></div>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+{
+	"name": "bearcat-browserify-jquery",
+	"scan": ["app"],
+	"beans": []
+}

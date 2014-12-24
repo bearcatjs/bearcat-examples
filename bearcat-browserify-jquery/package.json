@@ -1,5 +1,5 @@
 {
-  "name": "browserify-markdown-editor",
+  "name": "bearcat-browserify-jquery",
   "version": "0.0.0",
   "description": "A demo showing how to build a markdown editor with browserify and marked.",
   "main": "index.js",
@@ -7,13 +7,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "marked": "~0.2.9",
-    "peacock": "~0.2.0",
-    "browserify": "~2.31.0",
-    "hyperwatch": "~0.5.0",
-    "brfs": "0.0.8",
-    "brace": "~0.1.3",
-    "bearcat": "0.3.x"
+    "bearcat": "0.3.x",
+    "jquery": "^2.1.3"
   },
   "devDependencies": {},
   "keywords": [],

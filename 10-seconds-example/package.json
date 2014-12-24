@@ -1,0 +1,28 @@
+{
+  "name": "bearcat-10-seconds-example",
+  "version": "0.0.0",
+  "description": "bearcat 10 seconds example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bearcatjs/bearcat-examples"
+  },
+  "keywords": [
+    "bearcat",
+    "10",
+    "seconds",
+    "example"
+  ],
+  "author": "fantasyni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bearcatjs/bearcat-examples/issues"
+  },
+  "homepage": "https://github.com/bearcatjs/bearcat-examples",
+  "dependencies": {
+    "bearcat": "0.3.x"
+  }
+}

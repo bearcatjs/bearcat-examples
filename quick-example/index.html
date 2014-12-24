@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>bearcat-quick-example</title>
+		<script src="./lib/bearcat.js"></script>
+		<script src="./bearcat-bootstrap.js"></script>
+		<script type="text/javascript">
+		bearcat.createApp();
+		bearcat.use(['car']);
+		bearcat.start(function() {
+			var car = bearcat.getBean('car');
+			car.run();
+		});
+		</script>
+	</head>
+	<body>
+		<h2>10-seconds-example</h2>	
+	</body>
+</html>

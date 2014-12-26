@@ -1,0 +1,12 @@
+[submodule "helloBearcat"]
+	path = helloBearcat
+	url = https://github.com/bearcatjs/helloBearcat.git
+[submodule "treasures"]
+	path = treasures
+	url = https://github.com/bearcatjs/treasures.git
+[submodule "chatofpomelo-websocket"]
+	path = chatofpomelo-websocket
+	url = https://github.com/bearcatjs/chatofpomelo-websocket.git
+[submodule "todo"]
+	path = todo
+	url = https://github.com/bearcatjs/todo.git

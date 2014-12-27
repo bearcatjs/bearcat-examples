@@ -129,6 +129,4 @@ Collide.prototype.resolve = function() {
   });
 };
 
-// exports.collide = new Collide();
-
 bearcat.module(Collide, typeof module !== 'undefined' ? module : {});

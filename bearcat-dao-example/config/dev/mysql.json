@@ -1,0 +1,7 @@
+{
+	"mysql.port": 5331,
+	"mysql.host": "localhost",
+	"mysql.user": "root",
+	"mysql.password": "test",
+	"mysql.database": "bearcat_dao_example"
+}

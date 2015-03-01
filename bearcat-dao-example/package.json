@@ -1,0 +1,16 @@
+{
+	"name": "bearcat-dao-example",
+	"version": "0.1.0",
+	"description": "bearcat-dao example",
+	"main": "app.js",
+	"keywords": [
+		"bearcat-dao",
+		"example"
+	],
+	"dependencies": {
+		"bearcat": "0.4.x",
+		"bearcat-dao": "0.2.x"
+	},
+	"author": "fantasyni",
+	"license": "MIT"
+}

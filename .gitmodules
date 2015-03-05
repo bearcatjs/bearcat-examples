@@ -10,3 +10,6 @@
 [submodule "todo"]
 	path = todo
 	url = https://github.com/bearcatjs/todo.git
+[submodule "bearcat-cocos2d-js-example"]
+	path = bearcat-cocos2d-js-example
+	url = https://github.com/bearcatjs/bearcat-cocos2d-js-example.git
